@@ -1,5 +1,3 @@
-import { useCheckInfoStore } from "@/hooks/use-check-info-store";
-import { InfoType } from "@/types";
 import {
   Body,
   Button,
@@ -53,8 +51,8 @@ export const NetlifyWelcomeEmail = ({ checked }: any) => {
                   around the world who use Netlify to build and ship sites,
                   stores, and apps.
                 </Text>
-                {checked?.map((item: any) => (
-                  <Text>
+                {checked?.map((item: any, index: number) => (
+                  <Text key={index}>
                     Name: {item.name}
                     Email: {item.email}
                     Phone: {item.phone}

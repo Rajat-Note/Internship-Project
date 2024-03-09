@@ -1,6 +1,5 @@
 import { Resend } from "resend";
 import { NextResponse } from "next/server";
-import { InfoType } from "@/types";
 
 const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
